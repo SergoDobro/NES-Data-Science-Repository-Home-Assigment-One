@@ -1,5 +1,5 @@
 class Controller:
-    def __init__(self,map, initial_park):
+    def __init__(self, map, initial_park):
         self.vehicles = initial_park
         self.vehicles_on_rest = initial_park #suppose that all vehicles rest when class is made
         self.vehicles_on_maintenance = []
@@ -28,6 +28,7 @@ class Vehicle:
         pass
 
     def Act(self):
+        self.status = "acting"
         pass
 
 
@@ -37,6 +38,7 @@ class Vehicle_Drill(Vehicle):
 
     def Act(self):
         #Drill, baby, Drill! Quote - Trump during inauguration
+        #Please, answer in pull request if I should keep making such joke comments, or if you want to ban me for such jokes and quotes
         pass;
 
 
